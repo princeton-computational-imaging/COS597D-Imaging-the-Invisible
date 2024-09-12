@@ -1,0 +1,10 @@
+{
+    "score": 100,
+    "tests_passed": 4,
+    "notes": {
+        "test_indexing_aggregation": "PASS",
+        "test_create_add_matrix": "PASS",
+        "test_sum_numbers": "PASS",
+        "test_multiply_numbers": "PASS"
+    }
+}
