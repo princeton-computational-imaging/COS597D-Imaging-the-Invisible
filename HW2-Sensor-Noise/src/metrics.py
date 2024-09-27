@@ -11,7 +11,7 @@ def calc_mean(imgs):
     """
     calculates the mean across all time stamps of the images with a specific filter
     args:
-        imgs(np.ndarray): the images separated into rgb vals, whos means you are trying to 
+        imgs(np.ndarray): the images separated into rgb vals, whose means you are trying to 
         calculate.
     output:
         mean_imgs(np.ndarray): the mean value of images in relation to their bayer pattern
@@ -24,7 +24,7 @@ def calc_var(imgs):
     """
     calculates the variance across all time stamps of the images with a specific filter
     args:
-        imgs(np.ndarray): the images separated into rgb vals, whos variance you are trying to 
+        imgs(np.ndarray): the images separated into rgb vals, whose variance you are trying to 
         calculate.
     output:
         var_imgs(np.ndarray): the variance value of images in relation to their bayer pattern
@@ -69,11 +69,11 @@ def calc_SNR_for_specific_gain(mean,var):
     """
     Calculate the SNR (mean / stddev) vs. the mean pixel intensity for a specific gain setting. You will need to bin the mean values into the range [0,255] so that you can compute SNR for a discrete set of values. 
     
-    mean(np.ndarray): the mean of the img filtered into rgb values - #(M, N, Num_gain)
-    var(np.ndarray): the variance of the img filtered into rgb values - #(M, N, Num_gain)
+    mean(np.ndarray): the mean of the img filtered into rgb values - #(M, N)
+    var(np.ndarray): the variance of the img filtered into rgb values - #(M, N)
     
     output:
-          SNR(np.ndarray): the computed SNR vs. mean of the captured image dataset - #(255, Num_gain)
+          SNR(np.ndarray): the computed SNR vs. mean of the captured image dataset - #(255)
     """
     
     raise NotImplementedError
